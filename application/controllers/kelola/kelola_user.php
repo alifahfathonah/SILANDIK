@@ -123,10 +123,10 @@ class kelola_user extends CI_Controller {
 		      else
 		      {
 		      	$pass_en  = $this->db->query("SELECT PASSWORD('".$this->input->post('password')."') as pass")->row()->pass;
-		      	$datapost = array(
+		      $datapost = array(
 				'nama'     => $this->input->post('nama'), 
                 'username' => $this->input->post('username'),
-                'jenis_kelamin'   => $this->input->post('jenis_kelamin'),
+                'jenis_k	elamin'   => $this->input->post('jenis_kelamin'),
                 'email'   => $this->input->post('email'),
 				'password' => $pass_en, 
 				'level'    => $this->input->post('level'), 
